@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<title>Akash</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<head>
+  <script>
+    function myUpload(){
+      
+    }
+  </script>
+  <script>
+    var x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            alert( "Geolocation is not supported by this browser.");
+          }
+        }
+        
+        
+        function showPosition(position) {
+          
+          alert("Latitude: "+position.coords.latitude +"\n"+ "Longitude: "+position.coords.longitude);
+        }
+        
+  </script>
+    <script>
+        function Navigator() {
+  var a = "User-agent header sent: " + navigator.userAgent;
+  
+
+
+
+  var b = "Browser Name: " + navigator.appName;
+
+
+
+
+  var c = "Platform: " + navigator.platform;
+  
+
+  var d = "Language of the browser: " + navigator.language;
+  
+
+  var e = "Browser's Engine Name: " + navigator.product;
+
+
+
+  var f = "Version info: " + navigator.appVersion;
+
+  alert(a+ "\n"+b+"\n"+c+"\n"+d+"\n"+e+"\n"+f);
+}
+        </script>
+        <script>
+         function myLocation() {
+          var g = "location.protocol: "+location.protocol+"\n";
+        
+        
+
+        
+          var h = "location.pathname: "+location.pathname+"\n";
+          
+        
+        
+          var i = "location.hostname: "+location.hostname+"\n";
+     
+        
+          var j = "location.href: "+location.href+"\n";
+      
+          alert(g+h+i+j);
+        }
+        
+        </script>
+       
+
+        <script>
+          function myScreen(){
+alert("Pixel Depth: " + screen.pixelDepth + "\n"+"Color Depth: " +screen.colorDepth+ "\n"+"Available Height: " +screen.availHeight+ "\n"+"Available Width: " + screen.availWidth+ "\n"+"Screen Height: " +screen.height+ "\n"+"Screen Width: " +screen.width);
+          }
+        </script>
+
+        <script>
+            function myDimensions() {
+              var w = "inner Width: "+window.innerWidth;
+              var h = "inner Height: "+ window.innerHeight;
+              
+              alert(w +"\n"+ h);
+              
+            }
+            
+            </script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* button */
+</style>
+<body>
+
+    
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="https://venus.cs.qc.cuny.edu/~shak0543/cs355/">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://www.zybooks.com" target="_blank">Zybook</a></li>
+          <li><a href="https://www.Tophat.com" target="_blank">TopHat</a></li>
+          <li><a href="https://tinyurl.com/CSCI355-Fall2019" target="_blank">355 Google Drive</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search Here 
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <li><a href="search.html">Advanced Search</a></li>
+              </form>
+              
+            
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Browser
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+             
+              <button onclick="Navigator()">Navigator</button>
+              <button onclick="myDimensions()">Window</button>
+              <button onclick="myScreen()">Screen</button>
+              <button onclick="myLocation()">Location</button>
+              <button onclick="getLocation()">Geolocation</button>
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="developers.html">Developer</a></li>
+                <li><a href="developers.html#contact">Contact Me</a></li>
+              </ul>
+            </li>
+    </ul>
+  </div>
+</nav>
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Akash</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center"></p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by Akash </a>
+  </div>
+</div>
+
+</body>
+</html>
